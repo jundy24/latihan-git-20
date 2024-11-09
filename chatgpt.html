@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contoh Halaman HTML</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS jika diperlukan -->
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Halaman Web Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Beranda</h2>
+        <p>Ini adalah paragraf pertama di halaman beranda. Anda bisa menambahkan konten di sini.</p>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Ini adalah bagian tentang kami. Di sini, Anda bisa menjelaskan lebih banyak tentang situs web atau perusahaan Anda.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Jika Anda ingin menghubungi kami, Anda bisa melakukannya melalui formulir berikut:</p>
+        <form action="/submit_form" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Semua Hak Dilindungi. Dibuat oleh [Nama Anda].</p>
+    </footer>
+</body>
+</html>
