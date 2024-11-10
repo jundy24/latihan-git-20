@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Border</title>
+  <style>
+    /* Container untuk loading border */
+    .loading-border {
+      width: 80px;
+      height: 80px;
+      border: 5px solid #dabfbf; /* Warna latar belakang border */
+      border-top: 5px solid #a55a83; /* Warna bagian yang berputar */
+      border-radius: 50%; /* Membuat bentuk lingkaran */
+      animation: spin 1s linear infinite; /* Animasi */
+    }
+
+    /* Keyframes untuk animasi */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="loading-border"></div> <!-- Elemen loading -->
+
+</body>
+</html>
